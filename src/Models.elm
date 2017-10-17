@@ -55,19 +55,19 @@ initialModel =
     Page "Object" ""
     [
             "no types, just objects",
-            "@var obj1 =  firstName: 'John', lastName: 'Doe' ;",
-      "@var obj2 = ;",
+            "@var obj1 = { firstName: 'John', lastName: 'Doe' };",
+      "@var obj2 = {};",
       "@obj2.value = 5;",
-            "@obj2.isGreaterThan = function (a) ",
+            "@obj2.isGreaterThan = function (a) {",
             "@    return this.value > a;",
-            "@"
+            "@}"
     ]
   ,
   
     Page "Function" ""
     [
-            "@function f(a, b)  ... ",
-            "@var f = function (a, b)  ... ",
+            "@function f(a, b) { ... }",
+            "@var f = function (a, b) { ... }",
             "@f.value = 5",
             "First-class citizen (higher order functions)",
             "@pass functions as parameters to other functions",
@@ -93,7 +93,7 @@ initialModel =
   
     Page "Built-in Prototypes" ""
     [
-            "'s prototype is Object.prototype",
+            "{}'s prototype is Object.prototype",
             "@toString, hasOwnProperty ...",
             "[]'s prototype is Array.prototype",
             "@map, filter, indexOf, push, slice ...",
@@ -133,7 +133,7 @@ initialModel =
       "ES5:",
             "@'Page ' + page + ' of ' + total",
       "ES6:",
-            "*`Page $page of $total`"
+            "*`Page $page of ${total}`"
     ]
   ,
   
@@ -154,12 +154,12 @@ initialModel =
   
     Page "Object destructuring" ""
     [
-      "@var o =  firstName: 'John', lastName: 'Doe', age: '30' ;",
+      "@var o = { firstName: 'John', lastName: 'Doe', age: '30' };",
       "@var firstName = o.firstName;",
       "@var lastName = o.lastName;",
       "@var age = o.age;",
             "",
-            "*let  firstName, lastName, age  = o;"
+            "*let { firstName, lastName, age } = o;"
     ]
   ,
   
@@ -175,26 +175,26 @@ initialModel =
   
     Page "Default parameters" ""
     [
-      "*function (a, b, c = 5, d = []) ",
+      "*function (a, b, c = 5, d = []) {}",
             "",
-            "*let f = (a, b = 3) => "
+            "*let f = (a, b = 3) => {}"
     ]
   ,
   
     Page "Named parameters" ""
     [
-            "@var opt =  from: 50 ;",
-      "@function f(opt) ",
+            "@var opt = { from: 50 };",
+      "@function f(opt) {",
       "@    var from = opt.from || 1;",
       "@    var to = opt.to || 100;",
-            "@",
-            "*function f( from = 1, to = 100 ) "
+            "@}",
+            "*function f( from = 1, to = 100 ) {}"
     ]
   ,
   
     Page "Rest parameters" ""
     [
-      "*let f = (a, ...b) => ",
+      "*let f = (a, ...b) => {}",
             "",
             "*f('John', 3, 6, 5, 8)",
             "",
@@ -253,7 +253,7 @@ initialModel =
       "define methods on prototype",
       "call constructor with new",
             "@    Object.create(Person.prototype)",
-            "@    var obj = ;",
+            "@    var obj = {};",
             "@    obj.__proto__ = Person.prototype;"
     ]
   ,
@@ -333,11 +333,11 @@ initialModel =
   
     Page "Named exports" ""
     [
-      "*export let myObj =  ... ",
-      "*export function myFunc()  ... ",
-      "*export class MyClass  ... ",
+      "*export let myObj = { ... }",
+      "*export function myFunc() { ... }",
+      "*export class MyClass { ... }",
             "",
-      "*import  myObj, MyClass  from 'myModule'",
+      "*import { myObj, MyClass } from 'myModule'",
       "*import * as lib from 'myModule'",
       "*lib.myFunc()"
     ]
@@ -345,7 +345,7 @@ initialModel =
   
     Page "Default export" ""
     [
-      "*export default class  ... ",
+      "*export default class { ... }",
             "",
       "*import MyClass from 'myClass'",
       "*new MyClass()"
