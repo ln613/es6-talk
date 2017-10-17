@@ -9198,22 +9198,22 @@ var _user$project$Models$initialModel = {
 								_0: 'no types, just objects',
 								_1: {
 									ctor: '::',
-									_0: '@var obj1 =  firstName: \'John\', lastName: \'Doe\' ;',
+									_0: '@var obj1 = { firstName: \'John\', lastName: \'Doe\' };',
 									_1: {
 										ctor: '::',
-										_0: '@var obj2 = ;',
+										_0: '@var obj2 = {};',
 										_1: {
 											ctor: '::',
 											_0: '@obj2.value = 5;',
 											_1: {
 												ctor: '::',
-												_0: '@obj2.isGreaterThan = function (a) ',
+												_0: '@obj2.isGreaterThan = function (a) {',
 												_1: {
 													ctor: '::',
 													_0: '@    return this.value > a;',
 													_1: {
 														ctor: '::',
-														_0: '@',
+														_0: '@}',
 														_1: {ctor: '[]'}
 													}
 												}
@@ -9230,10 +9230,10 @@ var _user$project$Models$initialModel = {
 								'',
 								{
 									ctor: '::',
-									_0: '@function f(a, b)  ... ',
+									_0: '@function f(a, b) { ... }',
 									_1: {
 										ctor: '::',
-										_0: '@var f = function (a, b)  ... ',
+										_0: '@var f = function (a, b) { ... }',
 										_1: {
 											ctor: '::',
 											_0: '@f.value = 5',
@@ -9294,7 +9294,7 @@ var _user$project$Models$initialModel = {
 												'',
 												{
 													ctor: '::',
-													_0: '\'s prototype is Object.prototype',
+													_0: '{}\'s prototype is Object.prototype',
 													_1: {
 														ctor: '::',
 														_0: '@toString, hasOwnProperty ...',
@@ -9394,7 +9394,7 @@ var _user$project$Models$initialModel = {
 																				_0: 'ES6:',
 																				_1: {
 																					ctor: '::',
-																					_0: '*`Page $page of $total`',
+																					_0: '*`Page $page of ${total}`',
 																					_1: {ctor: '[]'}
 																				}
 																			}
@@ -9411,7 +9411,7 @@ var _user$project$Models$initialModel = {
 																			_0: 'ES5:',
 																			_1: {
 																				ctor: '::',
-																				_0: '@function (x)  return x + 1; ',
+																				_0: '@function (x) { return x + 1; }',
 																				_1: {
 																					ctor: '::',
 																					_0: 'ES6:',
@@ -9446,7 +9446,7 @@ var _user$project$Models$initialModel = {
 																				'',
 																				{
 																					ctor: '::',
-																					_0: '@var o =  firstName: \'John\', lastName: \'Doe\', age: \'30\' ;',
+																					_0: '@var o = { firstName: \'John\', lastName: \'Doe\', age: \'30\' };',
 																					_1: {
 																						ctor: '::',
 																						_0: '@var firstName = o.firstName;',
@@ -9461,7 +9461,7 @@ var _user$project$Models$initialModel = {
 																									_0: '',
 																									_1: {
 																										ctor: '::',
-																										_0: '*let  firstName, lastName, age  = o;',
+																										_0: '*let { firstName, lastName, age } = o;',
 																										_1: {ctor: '[]'}
 																									}
 																								}
@@ -9504,13 +9504,13 @@ var _user$project$Models$initialModel = {
 																						'',
 																						{
 																							ctor: '::',
-																							_0: '*function (a, b, c = 5, d = []) ',
+																							_0: '*function (a, b, c = 5, d = []) {}',
 																							_1: {
 																								ctor: '::',
 																								_0: '',
 																								_1: {
 																									ctor: '::',
-																									_0: '*let f = (a, b = 3) => ',
+																									_0: '*let f = (a, b = 3) => {}',
 																									_1: {ctor: '[]'}
 																								}
 																							}
@@ -9523,10 +9523,10 @@ var _user$project$Models$initialModel = {
 																							'',
 																							{
 																								ctor: '::',
-																								_0: '@var opt =  from: 50 ;',
+																								_0: '@var opt = { from: 50 };',
 																								_1: {
 																									ctor: '::',
-																									_0: '@function f(opt) ',
+																									_0: '@function f(opt) {',
 																									_1: {
 																										ctor: '::',
 																										_0: '@    var from = opt.from || 1;',
@@ -9535,10 +9535,10 @@ var _user$project$Models$initialModel = {
 																											_0: '@    var to = opt.to || 100;',
 																											_1: {
 																												ctor: '::',
-																												_0: '@',
+																												_0: '@}',
 																												_1: {
 																													ctor: '::',
-																													_0: '*function f( from = 1, to = 100 ) ',
+																													_0: '*function f( from = 1, to = 100 ) {}',
 																													_1: {ctor: '[]'}
 																												}
 																											}
@@ -9554,7 +9554,7 @@ var _user$project$Models$initialModel = {
 																								'',
 																								{
 																									ctor: '::',
-																									_0: '*let f = (a, ...b) => ',
+																									_0: '*let f = (a, ...b) => {}',
 																									_1: {
 																										ctor: '::',
 																										_0: '',
@@ -9703,7 +9703,7 @@ var _user$project$Models$initialModel = {
 																																			_0: '@    Object.create(Person.prototype)',
 																																			_1: {
 																																				ctor: '::',
-																																				_0: '@    var obj = ;',
+																																				_0: '@    var obj = {};',
 																																				_1: {
 																																					ctor: '::',
 																																					_0: '@    obj.__proto__ = Person.prototype;',
@@ -9891,19 +9891,19 @@ var _user$project$Models$initialModel = {
 																																											'',
 																																											{
 																																												ctor: '::',
-																																												_0: '*export let myObj =  ... ',
+																																												_0: '*export let myObj = { ... }',
 																																												_1: {
 																																													ctor: '::',
-																																													_0: '*export function myFunc()  ... ',
+																																													_0: '*export function myFunc() { ... }',
 																																													_1: {
 																																														ctor: '::',
-																																														_0: '*export class MyClass  ... ',
+																																														_0: '*export class MyClass { ... }',
 																																														_1: {
 																																															ctor: '::',
 																																															_0: '',
 																																															_1: {
 																																																ctor: '::',
-																																																_0: '*import  myObj, MyClass  from \'myModule\'',
+																																																_0: '*import { myObj, MyClass } from \'myModule\'',
 																																																_1: {
 																																																	ctor: '::',
 																																																	_0: '*import * as lib from \'myModule\'',
@@ -9926,7 +9926,7 @@ var _user$project$Models$initialModel = {
 																																												'',
 																																												{
 																																													ctor: '::',
-																																													_0: '*export default class  ... ',
+																																													_0: '*export default class { ... }',
 																																													_1: {
 																																														ctor: '::',
 																																														_0: '',
