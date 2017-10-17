@@ -1,9 +1,9 @@
 {
-  "name": "fptalk",
+  "name": "es6-talk",
   "version": "1.0.0",
-  "description": "JavaScript and the Rise of Functional Programming",
+  "description": "Start Using ES6/7 Today",
   "author": "Nan Li",
-  "homepage": "https://ln613.github.io/fp-talk",
+  "homepage": "https://ln613.github.io/es6-talk",
   "scripts": {
     "start": "webpack-dev-server --port 412",
     "build": "webpack",
