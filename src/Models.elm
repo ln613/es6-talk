@@ -140,7 +140,7 @@ initialModel =
     Page "Arrow function" ""
     [
       "ES5:",
-      "@function (x)  return x + 1; ",
+      "@function (x) { return x + 1; }",
       "ES6:",
       "*x => x + 1",
             "",
